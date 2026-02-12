@@ -9,7 +9,6 @@ def test_fsum():
     calc = SimpleCalculator()
     assert calc.fsum(2, 3) == 5
     assert isinstance(calc.fsum(2, 3), int)
-    # Test avec booléens (Python considère True=1, False=0 comme des int)
     assert calc.fsum(True, 1) == 2
 
 def test_substract():
@@ -28,7 +27,6 @@ def test_divide():
     assert result == 5.0
     assert isinstance(result, float)
     
-    # 0 / n -> 0.0
     assert calc.divide(0, 5) == 0.0
 
 def test_divide_by_zero():
@@ -41,12 +39,9 @@ def test_invalid_types():
     methods = [calc.fsum, calc.substract, calc.multiply, calc.divide]
     
     for method in methods:
-        # Test avec float
         with pytest.raises(TypeError):
             method(2.5, 3)
-        # Test avec string
         with pytest.raises(TypeError):
             method(2, "3")
-        # Test avec None
         with pytest.raises(TypeError):
             method(None, 3)
