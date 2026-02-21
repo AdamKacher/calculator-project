@@ -36,7 +36,7 @@ source venv/bin/activate  # Sur Windows : venv\Scripts\activate
 pip install -e .
 ```
 
-## 💻 Utilisation
+## Utilisation
 
 Voici un exemple simple de la façon d'importer et d'utiliser la calculatrice dans vos scripts Python :
 
