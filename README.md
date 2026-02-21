@@ -63,6 +63,6 @@ Ce projet respecte des standards stricts de qualité de code. Si vous souhaitez 
 * **Formatage (Black)** : `black src/ tests/`
 * **Analyse statique (Pylint)** : `pylint src/`
 
-## 📄 Licence
+## Licence
 
 Ce projet est distribué sous la licence Unlicense (Domaine Public).
