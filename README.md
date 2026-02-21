@@ -55,7 +55,7 @@ division = calc.divide(10, 5)      # Résultat : 2.0
 print(f"10 + 5 = {addition}")
 ```
 
-## 🛠️ Développement et Tests
+## Tests et Bonnes Pratiques
 
 Ce projet respecte des standards stricts de qualité de code. Si vous souhaitez modifier le code, assurez-vous de lancer les outils suivants :
 
