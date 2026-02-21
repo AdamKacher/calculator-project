@@ -15,7 +15,7 @@ La classe `SimpleCalculator` permet d'effectuer des opérations arithmétiques b
 * Les méthodes n'acceptent que des entiers (`int`) en entrée. Une erreur `TypeError` est levée si d'autres types sont fournis.
 * La division par zéro est gérée de manière sécurisée et lève une erreur `ZeroDivisionError`.
 
-## 🚀 Installation
+## Installation
 
 Il est fortement recommandé d'utiliser un environnement virtuel (`venv`) pour installer ce projet, qui a été développé avec Python 3.13.
 
