@@ -1,4 +1,15 @@
+"""
+Module fournissant une calculatrice.
+Ce module contient la classe SimpleCalculator qui permet d'effectuer
+des opérations arithmétiques simples sur des nombres entiers.
+"""
+
+
 class SimpleCalculator:
+    """
+    Une calculatrice simple pour effectuer des opérations de base
+    sur des entiers.
+    """
 
     def _check_types(self, a: int, b: int) -> None:
         """Vérifie que a et b sont des int."""
