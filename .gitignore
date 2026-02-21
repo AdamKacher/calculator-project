@@ -7,3 +7,10 @@ __pycache__/
 dist/
 *.egg-info/
 .DS_Store
+.env
+.env.*
+.vscode/
+.idea/
+*.swp
+.venv/
+env/
