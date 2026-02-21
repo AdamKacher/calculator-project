@@ -59,9 +59,24 @@ print(f"10 + 5 = {addition}")
 
 Ce projet respecte des standards stricts de qualité de code. Si vous souhaitez modifier le code, assurez-vous de lancer les outils suivants :
 
-* **Tests unitaires (Pytest)** : `pytest tests/`
-* **Formatage (Black)** : `black src/ tests/`
-* **Analyse statique (Pylint)** : `pylint src/`
+* **Tests unitaires (Pytest)** : 
+  ```bash
+  pytest tests/
+  ```
+* **Formatage du code (Black)** : 
+  ```bash
+  black src/ tests/
+  ```
+* **Analyse statique (Pylint)** : 
+  ```bash
+  pylint src/
+  ```
+* **Complexité et Maintenabilité (Radon)** : 
+  ```bash
+  radon cc src -a    # Pour vérifier la complexité cyclomatique
+  radon mi src       # Pour évaluer l'indice de maintenabilité
+  ```
+
 
 ## Licence
 

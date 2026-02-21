@@ -1,7 +1,7 @@
 [project]
-name = "TestSimpleCalculator_2026_FJ"
+name = "TestSimpleCalculator_2026_AK"
 version = "0.0.1"
-authors = [{name = "Fabrice Jumel"}]
+authors = [{name = "Adam Kacher"}]
 description = "Simple calculator for packaging demo"
 readme = "README.md"
 license = {text = "Unlicense"}
