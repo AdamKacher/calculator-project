@@ -1,4 +1,4 @@
-name: CI Workflow
+name: main.yml (CI Workflow)
 
 # Déclenche l'action à chaque push sur la branche main
 on:
