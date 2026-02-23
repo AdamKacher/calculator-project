@@ -21,7 +21,7 @@ Il est fortement recommandé d'utiliser un environnement virtuel (`venv`) pour i
 
 **1. Cloner le dépôt :**
 ```bash
-git clone [https://github.com/TonNomUtilisateur/calculator-project.git](https://github.com/TonNomUtilisateur/calculator-project.git)
+git clone 
 cd calculator-project
 ```
 
@@ -73,8 +73,8 @@ Ce projet respecte des standards stricts de qualité de code. Si vous souhaitez 
   ```
 * **Complexité et Maintenabilité (Radon)** : 
   ```bash
-  radon cc src -a    # Pour vérifier la complexité cyclomatique
-  radon mi src       # Pour évaluer l'indice de maintenabilité
+  radon cc src -a    
+  radon mi src       
   ```
 
 
