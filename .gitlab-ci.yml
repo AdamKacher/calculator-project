@@ -1,0 +1,32 @@
+# On utilise l'image officielle Python 3.13 de Docker
+image: python:3.13
+
+# On définit l'ordre de nos étapes
+stages:
+  - verification
+  - test
+
+# Ce script s'exécutera avant chaque job 
+before_script:
+  - python -m pip install --upgrade pip
+  - pip install -e .
+  - pip install pytest black pylint radon
+
+# ÉTAPE 1 : VÉRIFICATIONS 
+format_and_lint:
+  stage: verification
+  script:
+    - black --check src/ tests/
+    - pylint src/
+
+metrics:
+  stage: verification
+  script:
+    - radon cc src/ -a
+    - radon mi src/
+
+# ÉTAPE 2 : TESTS 
+unit_tests:
+  stage: test
+  script:
+    - pytest tests/
