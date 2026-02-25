@@ -32,7 +32,7 @@ jobs:
     - name: Test
       run: pytest tests/
 
-  # PARTIE CD  
+  # PARTIE CD (sans publication)
   build:
     name: Build package
     runs-on: ubuntu-latest
