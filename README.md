@@ -21,7 +21,7 @@ Il est fortement recommandé d'utiliser un environnement virtuel (`venv`) pour i
 
 **1. Cloner le dépôt :**
 ```bash
-git clone 
+git clone [https://github.com/AdamKacher/calculator-project.git] (https://github.com/AdamKacher/calculator-project.git)
 cd calculator-project
 ```
 
@@ -77,6 +77,13 @@ Ce projet respecte des standards stricts de qualité de code. Si vous souhaitez 
   radon mi src       
   ```
 
+**Automatisation (CI/CD)**
+
+Les dépôts GitHub et GitLab sont équipés de pipelines d'intégration et de déploiement continus (CI/CD) via des fichiers .yml :
+
+1.  **Intégration Continue (CI) :** À chaque push, un serveur distant Ubuntu installe les dépendances, vérifie le formatage, évalue la qualité du code et exécute les tests unitaires.
+
+2.  **Création du .whl et Déploiement (CD) :** Si les tests passent avec succès, le système compile le code pour générer le paquet et le publie automatiquement sur Test PyPI grâce aux secrets d'authentification.
 
 ## Licence
 
