@@ -1,6 +1,6 @@
 [project]
 name = "TestSimpleCalculator_2026_AK"
-version = "0.0.2"
+version = "1.0.0"
 authors = [{name = "Adam Kacher"}]
 description = "Simple calculator for packaging demo"
 readme = "README.md"
